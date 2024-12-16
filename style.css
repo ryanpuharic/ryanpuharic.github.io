@@ -17,23 +17,22 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url('./images/mountain.jpg'); /* Use your local background image */
+    background-image: url('./images/mountain.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden; /* Disable scrolling */
-    color: #ffffff; /* Set default color for better contrast */
+    color: #ffffff; 
   }
   
   .container {
     text-align: center;
-    flex: 1; /* Allows the container to take up most of the vertical space */
+    flex: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  /* Centered Name Styling */
   h1 {
     font-size: 9rem;
     font-family: "Averia Libre", serif;
@@ -45,12 +44,11 @@
     margin-bottom: 8rem;
   }
   
-  /* Centered Navbar Styling */
   .navbar {
     position: fixed;
-    bottom: 5vh; /* Position the navbar 20px above the bottom */
+    bottom: 5vh; 
     display: flex;
-    justify-content: center; /* Center navbar horizontally */
+    justify-content: center; 
     text-align: center; /* Align links horizontally */
     width: 100%; /* Ensures navbar spans full width for centering */
     gap: 1.5rem;
@@ -127,7 +125,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url('./images/blur.png'); /* Use your local background image */
+    background-image: url('./images/blur.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -218,12 +216,12 @@
   }
 
   .about-content {
-    width: 80%; /* Adjust size as needed */
+    width: 80%; 
     max-width: 800px; /* Maximum size */
     padding: 20px;
     background-color: #2f2f3f; /* Background color for the square */
     border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;
     margin: 20px auto; /* Centering the square */
   }
@@ -238,7 +236,7 @@
     width: 100%;
     max-width: 300px; /* Limit image size */
     height: auto;
-    border-radius: 15px; /* Optional rounded corners for the image */
+    border-radius: 15px; 
     margin-top: 10px;
   }
   
@@ -271,7 +269,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      overflow-y: auto; /* Allow vertical scrolling */
+      overflow-y: auto;
       overflow-x: hidden;
       font-family: "Averia Libre", serif;
       z-index: 9999;
@@ -293,18 +291,18 @@
 
   .popup-heading-link {
     text-decoration: none; /* Remove underline */
-    color: #889574; /* Set the desired blue color */
+    color: #889574;
     font-weight: inherit; /* Inherit font weight from the parent h2 */
   }
 
   .popup-heading-link:visited {
-      color: #889574; /* Ensure it stays the same blue when visited */
+      color: #889574; 
   }
 
   .popup-heading-link:hover,
   .popup-heading-link:focus {
-      text-decoration: none; /* Prevent underline on hover or focus */
-      color: #aebb9b; /* Keep the same blue on hover or focus */
+      text-decoration: none; 
+      color: #aebb9b; 
   }
 
   h2 {
@@ -328,20 +326,20 @@
   .spot {
     display: flex;               /* Align items side by side */
     flex-direction: row;         /* Default for row, can be omitted */
-    justify-content: space-between; /* Adds space between the two embeds */
-    gap: 10px;                   /* Adds consistent spacing between items */
-    width: 100%;                 /* Ensure it spans the popup's width */
+    justify-content: space-between; 
+    gap: 10px;                
+    width: 100%;               
     max-width: 100%;
     overflow: hidden;            /* Prevent horizontal overflow */
     box-sizing: border-box;      /* Include padding and border in width */
   }
 
   .spot iframe {
-      flex: 1;                     /* Make each iframe take equal space */
+      flex: 1;                   
       height: 40vh;                /* Adjust iframe height to fill parent */
-      max-width: 48%;              /* Prevent iframe from being too wide */
-      border-radius: 12px;         /* Optional: make the edges rounded */
-      border: none;                /* Optional: remove border for cleaner look */
+      max-width: 48%;          
+      border-radius: 12px;        
+      border: none;                
   }
 
   /* music section gallery */
@@ -350,10 +348,10 @@
     display: flex;                 /* Arrange images in a row */
     overflow-x: auto;              /* Enable horizontal scrolling */
     overflow-y: hidden;            /* Prevent vertical overflow */
-    white-space: nowrap;           /* Prevent line breaks */
+    white-space: nowrap;          
     width: 100%;                   /* Match the width of the popup */
     box-sizing: border-box;        /* Ensure padding doesn't add to width */
-    scroll-behavior: smooth;       /* Optional: smooth scrolling effect */
+    scroll-behavior: smooth;   
     margin-top: 20px;
   }
   
@@ -361,10 +359,10 @@
     max-height: 250px;              /* Adjust to fit popup height */
     height: auto;                  /* Maintain aspect ratio */
     max-width: 100%;               /* Prevent images from exceeding their container */
-    margin-right: 10px;            /* Optional: spacing between images */
+    margin-right: 10px;          
     flex-shrink: 0;                /* Prevent images from shrinking */
-    border-radius: 8px;            /* Optional: rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    border-radius: 8px;            
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }  
 
   .ct {
@@ -374,15 +372,15 @@
   }
 
   .circle-container {
-    width: 200px; /* Define a fixed size */
-    height: 200px; /* Same as width for a perfect circle */
+    width: 200px; 
+    height: 200px; 
     overflow: hidden; /* Ensures the image stays inside the bounds */
     border-radius: 50%; /* Makes the container circular */
   }
 
   .square-container {
-    width: 75px; /* Define a fixed size */
-    height: 75px; /* Same as width for a perfect circle */
+    width: 75px; 
+    height: 75px; 
     overflow: hidden; /* Ensures the image stays inside the bounds */
   }
 
@@ -404,7 +402,7 @@
   
   .about-head {
     display: flex;
-    align-items: center; /* Centers h2 vertically relative to the image */
+    align-items: center;
     gap: 150px; /* Space between the image and heading */
   }
 
@@ -507,7 +505,7 @@
         justify-content: center;
         align-items: center;
         overflow: auto;
-        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for better contrast */
+        background-color: rgba(0, 0, 0, 0.8); 
         z-index: 1000;
     }
 
