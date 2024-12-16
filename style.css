@@ -1,0 +1,573 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Averia Libre", serif;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  .body1 {
+    font-family: 'Averia Libre', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('./images/mountain.jpg'); /* Use your local background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Disable scrolling */
+    color: #ffffff; /* Set default color for better contrast */
+  }
+  
+  .container {
+    text-align: center;
+    flex: 1; /* Allows the container to take up most of the vertical space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Centered Name Styling */
+  h1 {
+    font-size: 9rem;
+    font-family: "Averia Libre", serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    color: #e2e2e2;
+    opacity: 70%;
+    margin-bottom: 8rem;
+  }
+  
+  /* Centered Navbar Styling */
+  .navbar {
+    position: fixed;
+    bottom: 5vh; /* Position the navbar 20px above the bottom */
+    display: flex;
+    justify-content: center; /* Center navbar horizontally */
+    text-align: center; /* Align links horizontally */
+    width: 100%; /* Ensures navbar spans full width for centering */
+    gap: 1.5rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    font-family: "Averia Libre", serif;
+    font-style: normal;
+    display: flex;
+    font-size: 2.5rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link.dev {
+    color: #D3E7B3; 
+  }
+
+  .nav-link.dev .highlighted-text{
+    color: #D3E7B3; 
+  }
+  
+  .nav-link.music {
+    color: #9FDCBE; 
+  }
+
+  .nav-link.music .highlighted-text{
+    color: #9FDCBE; 
+  }
+  
+  .nav-link.video {
+    color: #A7E7E5; 
+  }
+
+  .nav-link.video .highlighted-text{
+    color: #A7E7E5; 
+  }
+  
+  .nav-link.about {
+    color: #91CEF7; 
+  }
+
+  .nav-link.about .highlighted-text{
+    color: #91CEF7; 
+  }
+
+  .nav-link.home {
+    color: lightgrey; 
+  }
+
+  .nav-link.home .highlighted-text{
+    color: lightgrey; 
+  }
+  
+  .nav-link:hover {
+    background-color: #e2e2e2;
+  }
+
+  .container2 {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+
+  .body2 {
+    font-family: 'Averia Libre', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('./images/blur.png'); /* Use your local background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 75px;
+  }
+  
+  .main-heading {
+    font-size: 8rem;
+    font-family: "Averia Libre", serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    opacity: 100%;
+    margin-bottom: 8rem;
+    padding-bottom: 40px;
+    margin: 20px 0;
+    text-transform: lowercase;
+  }
+
+  .about-page .main-heading {
+    color: #91CEF7; 
+  }
+
+  .dev-page .main-heading {
+      color: #D3E7B3;
+  }
+
+  .music-page .main-heading {
+      color: #9FDCBE; 
+  }
+
+  .film-page .main-heading {
+      color: #A7E7E5; 
+  }
+  
+  /* Box Layout */
+  .box-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+  
+  .box {
+    font-family: 'Averia Libre', sans-serif;
+    flex: 1;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+    border: 5px solid black;
+  }
+
+  .highlighted-text {
+    font-family: 'Averia Libre', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+  
+  .dev-page .box:nth-child(1) { background-image: url('./images/map.png'); }
+  .dev-page .box:nth-child(2) { background-image: url('./images/catingus.png'); }
+  .dev-page .box:nth-child(3) { background-image: url('./images/resume.png'); }
+
+  .music-page .box:nth-child(1) { background-image: url('./images/etf.jpeg'); }
+  .music-page .box:nth-child(2) { background-image: url('./images/kous.png'); }
+  .music-page .box:nth-child(3) { background-image: url('./images/embers.png'); }
+  
+  .film-page .box:nth-child(1) { background-image: url('./images/ct.png'); }
+  .film-page .box:nth-child(2) { background-image: url('./images/why.png'); }
+
+  .about-page .box:nth-child(1) { background-image: url('./images/face.jpg'); }
+  .about-page .box:nth-child(2) { background-image: url('./images/resume.png'); }
+
+  .box:hover {
+    transform: scale(1.05);
+  }
+
+  .about-content {
+    width: 80%; /* Adjust size as needed */
+    max-width: 800px; /* Maximum size */
+    padding: 20px;
+    background-color: #2f2f3f; /* Background color for the square */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    text-align: center;
+    margin: 20px auto; /* Centering the square */
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff; /* Text color */
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 300px; /* Limit image size */
+    height: auto;
+    border-radius: 15px; /* Optional rounded corners for the image */
+    margin-top: 10px;
+  }
+  
+  /* Popup Styles */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    font-family: "Averia Libre", serif;
+    align-items: center;
+    overflow: auto; 
+    z-index: 9999;
+  }
+
+  .popup-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%; /* Stretch to fit most of the screen width */
+      max-width: 1200px; /* Limit maximum size */
+      max-height: 90vh;
+      text-align: left;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto; /* Allow vertical scrolling */
+      overflow-x: hidden;
+      font-family: "Averia Libre", serif;
+      z-index: 9999;
+  }
+
+  .popup-text {
+      align-items: left;
+  }
+
+  .popup-content iframe {
+      width: 100%; /* Make the iframe take up the full width of its container */
+      height: 70vh; /* Make it responsive to viewport height */
+      border: none; /* Remove default iframe border */
+      border-radius: 5px;
+      padding-top:10px;
+      padding-bottom:10px;
+      flex-shrink: 0;
+  }
+
+  .popup-heading-link {
+    text-decoration: none; /* Remove underline */
+    color: #889574; /* Set the desired blue color */
+    font-weight: inherit; /* Inherit font weight from the parent h2 */
+  }
+
+  .popup-heading-link:visited {
+      color: #889574; /* Ensure it stays the same blue when visited */
+  }
+
+  .popup-heading-link:hover,
+  .popup-heading-link:focus {
+      text-decoration: none; /* Prevent underline on hover or focus */
+      color: #aebb9b; /* Keep the same blue on hover or focus */
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-family: "Averia Libre", serif;
+    font-weight: bold;
+    color: #889574; 
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-family: "Averia Libre", serif;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  p {
+    text-align: left;
+  }
+  
+  .spot {
+    display: flex;               /* Align items side by side */
+    flex-direction: row;         /* Default for row, can be omitted */
+    justify-content: space-between; /* Adds space between the two embeds */
+    gap: 10px;                   /* Adds consistent spacing between items */
+    width: 100%;                 /* Ensure it spans the popup's width */
+    max-width: 100%;
+    overflow: hidden;            /* Prevent horizontal overflow */
+    box-sizing: border-box;      /* Include padding and border in width */
+  }
+
+  .spot iframe {
+      flex: 1;                     /* Make each iframe take equal space */
+      height: 40vh;                /* Adjust iframe height to fill parent */
+      max-width: 48%;              /* Prevent iframe from being too wide */
+      border-radius: 12px;         /* Optional: make the edges rounded */
+      border: none;                /* Optional: remove border for cleaner look */
+  }
+
+  /* music section gallery */
+
+  .image-gallery {
+    display: flex;                 /* Arrange images in a row */
+    overflow-x: auto;              /* Enable horizontal scrolling */
+    overflow-y: hidden;            /* Prevent vertical overflow */
+    white-space: nowrap;           /* Prevent line breaks */
+    width: 100%;                   /* Match the width of the popup */
+    box-sizing: border-box;        /* Ensure padding doesn't add to width */
+    scroll-behavior: smooth;       /* Optional: smooth scrolling effect */
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    max-height: 250px;              /* Adjust to fit popup height */
+    height: auto;                  /* Maintain aspect ratio */
+    max-width: 100%;               /* Prevent images from exceeding their container */
+    margin-right: 10px;            /* Optional: spacing between images */
+    flex-shrink: 0;                /* Prevent images from shrinking */
+    border-radius: 8px;            /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  }  
+
+  .ct {
+    max-height: 600px;
+    height: auto;      
+    max-width: 100%;   
+  }
+
+  .circle-container {
+    width: 200px; /* Define a fixed size */
+    height: 200px; /* Same as width for a perfect circle */
+    overflow: hidden; /* Ensures the image stays inside the bounds */
+    border-radius: 50%; /* Makes the container circular */
+  }
+
+  .square-container {
+    width: 75px; /* Define a fixed size */
+    height: 75px; /* Same as width for a perfect circle */
+    overflow: hidden; /* Ensures the image stays inside the bounds */
+  }
+
+  .circle-image {
+      width: 100%; /* Make the image fill the container */
+      height: 100%; /* Stretch image to container size */
+      object-fit: cover; /* Ensures the image aspect ratio fits well */
+  }
+
+  .link-image {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Stretch image to container size */
+    object-fit: cover; /* Ensures the image aspect ratio fits well */
+  }
+
+  .link-image:hover {
+      opacity: 70%; /* Increases brightness when hovered */
+  }
+  
+  .about-head {
+    display: flex;
+    align-items: center; /* Centers h2 vertically relative to the image */
+    gap: 150px; /* Space between the image and heading */
+  }
+
+  .link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .body1, .body2 {
+      min-height: 100vh; /* Ensures these sections take up at least the viewport height */
+      height: auto; /* Allows them to grow if content overflows */
+      overflow: visible; /* Ensures content isn't clipped */
+      background-repeat: repeat;
+    }
+    
+    h1 {
+        font-size: 5rem; /* Reduce heading size */
+        text-align: center; /* Center align text */
+        margin-bottom: 3rem;
+        max-width: 90%; /* Allows for some padding while keeping text from overflowing */
+        width: auto; /* Ensures the width adapts to the content */
+        margin-left: auto; /* Center align the heading */
+        margin-right: auto; /* Center align the heading */
+    }
+    .main-heading {
+      font-size: 6rem; /* Reduce heading size */
+      margin-bottom: 1rem;
+    }
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 0; /* Smaller padding for a compact navbar */
+        gap: 0.25rem; /* Reduce the gap between links */
+        z-index: 1000;
+    }
+
+    .navbar .nav-link {
+        font-size: 1.3rem; /* Smaller font size for links */
+        padding: 5px 10px; /* Smaller padding inside links */
+    }
+
+    .navbar .highlighted-text {
+        letter-spacing: 0; /* Remove extra letter spacing */
+        font-size: inherit; /* Inherits the reduced font size from .nav-link */
+    }
+
+    /* Box Container Layout */
+    .box-container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes */
+        gap: 20px; /* Add spacing between boxes */
+    }
+
+    .box {
+        width: 90vw; /* Make the box width responsive */
+        aspect-ratio: 1; /* Maintain square shape */
+        max-width: 400px; /* Optional: cap the max width for larger screens */
+        border-radius: 10px; /* Keep the same rounded corners */
+    }
+
+    /* About Section */
+    .about-head {
+        flex-direction: column; /* Stack heading and image vertically */
+        gap: 20px; /* Add spacing between items */
+        text-align: center;
+    }
+
+    .about-content {
+        width: 95%; /* Adjust width to fit mobile screens */
+    }
+
+    .circle-container, .square-container {
+        width: 100px; /* Reduce circle size */
+        height: 100px;
+    }
+
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: hidden;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for better contrast */
+        z-index: 1000;
+    }
+
+    .popup-content {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 90%; /* Responsive width for mobile */
+        max-height: 90%; /* Prevent overflow */
+        overflow: auto; /* Allow scrolling if content is too tall */
+        padding: 15px; /* Adjust padding for smaller screens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .popup-content h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .popup-content h3 {
+        font-size: 1.2rem; /* Adjust subheading size */
+        margin-top: 1.5rem;
+    }
+
+    .popup-content p {
+        font-size: 1rem; /* Adjust paragraph font size */
+        line-height: 1.5; /* Improve readability */
+        margin-bottom: 1.5rem;
+    }
+
+    .spot {
+        flex-direction: row; /* Stack embeds vertically */
+        gap: 1vh;             /* Reduce the gap between embeds */
+        padding: 0;            /* Remove unnecessary padding */
+        overflow: auto;
+    }
+
+    .spot iframe {
+        max-width: 100%;       /* Prevent overflow */
+        height: 100%;          /* Adjust height for better fit */
+    }
+
+
+    .image-gallery {
+        overflow-x: auto;          /* Ensure horizontal scrolling */
+        white-space: nowrap;       /* Maintain horizontal scrolling */
+    }
+
+    .image-gallery img {
+        max-width: 85%;            /* Scale images for smaller screens */
+        flex-shrink: 0;            /* Prevent shrinking when scrolling */
+        margin-right: 10px;        /* Maintain spacing between images */
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.5rem; /* Adjust close button size */
+        cursor: pointer;
+        color: #333;
+    }
+  }
