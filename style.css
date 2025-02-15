@@ -199,11 +199,11 @@
   
   .dev-page .box:nth-child(1) { background-image: url('./images/map.png'); }
   .dev-page .box:nth-child(2) { background-image: url('./images/catingus.png'); }
-  .dev-page .box:nth-child(3) { background-image: url('./images/resume.png'); }
+/*  .dev-page .box:nth-child(3) { background-image: url('./images/resume.png'); }*/
 
   .music-page .box:nth-child(1) { background-image: url('./images/etf.jpeg'); }
   .music-page .box:nth-child(2) { background-image: url('./images/kous.png'); }
-  .music-page .box:nth-child(3) { background-image: url('./images/embers.png'); }
+/*.music-page .box:nth-child(3) { background-image: url('./images/embers.png'); }*/
   
   .film-page .box:nth-child(1) { background-image: url('./images/ct.png'); }
   .film-page .box:nth-child(2) { background-image: url('./images/why.png'); }
