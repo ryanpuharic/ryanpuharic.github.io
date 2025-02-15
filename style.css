@@ -325,20 +325,19 @@ p {
 
 .spot {
   display: flex;
-  flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+  flex-wrap: wrap; /* Wraps if needed on smaller screens */
   justify-content: center; /* Centers the iframes */
   gap: 10px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent horizontal overflow */
+  overflow: hidden; /* Prevents overflow */
 }
 
 .spot iframe {
-  flex: 1 1 calc(50% - 10px); /* Ensures each iframe takes up half width with gap considered */
-  aspect-ratio: 16/9; /* Maintains consistent aspect ratio */
-  max-width: 100%; /* Ensures they do not exceed container */
-  height: auto; /* Allows height to adjust based on width */
+  width: 100%; 
+  max-width: 500px; 
+  height: 300px; /* Ensures both embeds are the same height */
   border-radius: 12px;
   border: none;
 }
