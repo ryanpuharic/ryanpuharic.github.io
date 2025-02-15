@@ -325,19 +325,21 @@ p {
 
 .spot {
   display: flex;
-  flex-wrap: wrap; /* Wraps if needed on smaller screens */
-  justify-content: center; /* Centers the iframes */
+  flex-wrap: wrap; /* Wraps if needed */
+  justify-content: center; /* Centers the embeds */
   gap: 10px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevents overflow */
+  overflow: hidden; /* Prevents horizontal overflow */
+  margin-bottom: 10px;
 }
 
 .spot iframe {
-  width: 100%; 
-  max-width: 500px; 
-  height: 300px; /* Ensures both embeds are the same height */
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 16 / 9; 
+  height: 385px; 
   border-radius: 12px;
   border: none;
 }
