@@ -336,7 +336,7 @@
 
   .spot iframe {
       flex: 1;                   
-      height: 40vh;                /* Adjust iframe height to fill parent */
+      aspect-ratio: 16/9;                /* Adjust iframe height to fill parent */
       max-width: 48%;          
       border-radius: 12px;        
       border: none;                
