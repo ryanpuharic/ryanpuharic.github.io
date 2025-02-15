@@ -208,7 +208,7 @@
   .film-page .box:nth-child(1) { background-image: url('./images/ct.png'); }
   .film-page .box:nth-child(2) { background-image: url('./images/why.png'); }
 
-  .about-page .box:nth-child(1) { background-image: url('./images/face.jpg'); }
+  .about-page .box:nth-child(1) { background-image: url('./images/boulder.jpg'); }
   .about-page .box:nth-child(2) { background-image: url('./images/resume.png'); }
 
   .box:hover {
@@ -422,23 +422,23 @@
 
   @media (max-width: 768px) {
     .body1, .body2 {
-      min-height: 100vh; /* Ensures these sections take up at least the viewport height */
-      height: auto; /* Allows them to grow if content overflows */
-      overflow: visible; /* Ensures content isn't clipped */
+      min-height: 100vh; 
+      height: auto; 
+      overflow: visible; 
       background-repeat: repeat;
     }
     
     h1 {
-        font-size: 5rem; /* Reduce heading size */
-        text-align: center; /* Center align text */
+        font-size: 5rem; 
+        text-align: center; 
         margin-bottom: 3rem;
-        max-width: 90%; /* Allows for some padding while keeping text from overflowing */
-        width: auto; /* Ensures the width adapts to the content */
-        margin-left: auto; /* Center align the heading */
-        margin-right: auto; /* Center align the heading */
+        max-width: 90%; 
+        width: auto; 
+        margin-left: auto; 
+        margin-right: auto; 
     }
     .main-heading {
-      font-size: 6rem; /* Reduce heading size */
+      font-size: 6rem; 
       margin-bottom: 1rem;
     }
 
