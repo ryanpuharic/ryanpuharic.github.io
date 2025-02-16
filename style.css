@@ -199,6 +199,7 @@ h1 {
 
 .dev-page .box:nth-child(1) { background-image: url('./images/map.png'); }
 .dev-page .box:nth-child(2) { background-image: url('./images/catingus.png'); }
+.dev-page .box:nth-child(3) { background-image: url('./images/resume.png'); }
 /*  .dev-page .box:nth-child(3) { background-image: url('./images/resume.png'); }*/
 
 .music-page .box:nth-child(1) { background-image: url('./images/etf.jpeg'); }
@@ -209,7 +210,6 @@ h1 {
 .film-page .box:nth-child(2) { background-image: url('./images/why.png'); }
 
 .about-page .box:nth-child(1) { background-image: url('./images/boulder.jpg'); }
-.about-page .box:nth-child(2) { background-image: url('./images/resume.png'); }
 
 .box:hover {
   transform: scale(1.05);
@@ -310,6 +310,7 @@ h2 {
   font-family: "Averia Libre", serif;
   font-weight: bold;
   color: #889574; 
+  margin-bottom: 5px;
 }
 
 h3 {
@@ -320,6 +321,11 @@ h3 {
 }
 
 p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.devtext {
   text-align: left;
 }
 
@@ -374,10 +380,11 @@ p {
 }
 
 .circle-container {
-  width: 200px; 
-  height: 200px; 
+  width: 150px; 
+  height: 150px; 
   overflow: hidden; /* Ensures the image stays inside the bounds */
   border-radius: 50%; /* Makes the container circular */
+  margin-bottom: 10px;
 }
 
 .square-container {
