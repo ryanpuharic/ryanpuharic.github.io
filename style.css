@@ -21,7 +21,7 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden; /* Disable scrolling */
+  overflow: hidden; 
   color: #ffffff; 
 }
 
@@ -49,8 +49,8 @@ h1 {
   bottom: 5vh; 
   display: flex;
   justify-content: center; 
-  text-align: center; /* Align links horizontally */
-  width: 100%; /* Ensures navbar spans full width for centering */
+  text-align: center; 
+  width: 100%; 
   gap: 1.5rem;
 }
 
@@ -217,24 +217,24 @@ h1 {
 
 .about-content {
   width: 80%; 
-  max-width: 800px; /* Maximum size */
+  max-width: 800px; 
   padding: 20px;
-  background-color: #2f2f3f; /* Background color for the square */
-  border-radius: 25px; /* Rounded corners */
+  background-color: #2f2f3f; 
+  border-radius: 25px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  margin: 20px auto; /* Centering the square */
+  margin: 20px auto; 
 }
 
 .about-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #fff; /* Text color */
+  color: #fff; 
 }
 
 .about-image {
   width: 100%;
-  max-width: 300px; /* Limit image size */
+  max-width: 300px; 
   height: auto;
   border-radius: 15px; 
   margin-top: 10px;
@@ -260,8 +260,8 @@ h1 {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 90%; /* Stretch to fit most of the screen width */
-    max-width: 1200px; /* Limit maximum size */
+    width: 90%; 
+    max-width: 1200px;
     max-height: 90vh;
     text-align: left;
     position: relative;
@@ -280,9 +280,9 @@ h1 {
 }
 
 .popup-content iframe {
-    width: 100%; /* Make the iframe take up the full width of its container */
-    height: 70vh; /* Make it responsive to viewport height */
-    border: none; /* Remove default iframe border */
+    width: 100%; 
+    height: 70vh; 
+    border: none; 
     border-radius: 5px;
     padding-top:10px;
     padding-bottom:10px;
@@ -290,9 +290,9 @@ h1 {
 }
 
 .popup-heading-link {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   color: #889574;
-  font-weight: inherit; /* Inherit font weight from the parent h2 */
+  font-weight: inherit; 
 }
 
 .popup-heading-link:visited {
@@ -331,21 +331,22 @@ p {
 
 .spot {
   display: flex;
-  flex-wrap: wrap; /* Wraps if needed */
-  justify-content: center; /* Centers the embeds */
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevents horizontal overflow */
+  overflow: visible; 
   margin-bottom: 10px;
+  min-height: 400px; 
 }
 
 .spot iframe {
   width: 100%;
   max-width: 550px;
-  aspect-ratio: 16 / 9; 
-  height: 385px; 
+  height: auto; 
+  min-height: 352px; 
   border-radius: 12px;
   border: none;
 }
@@ -353,22 +354,22 @@ p {
 /* music section gallery */
 
 .image-gallery {
-  display: flex;                 /* Arrange images in a row */
-  overflow-x: auto;              /* Enable horizontal scrolling */
-  overflow-y: hidden;            /* Prevent vertical overflow */
+  display: flex;                
+  overflow-x: auto;             
+  overflow-y: hidden;           
   white-space: nowrap;          
-  width: 100%;                   /* Match the width of the popup */
-  box-sizing: border-box;        /* Ensure padding doesn't add to width */
+  width: 100%;                   
+  box-sizing: border-box;        
   scroll-behavior: smooth;   
   margin-top: 20px;
 }
 
 .image-gallery img {
-  max-height: 250px;              /* Adjust to fit popup height */
-  height: auto;                  /* Maintain aspect ratio */
-  max-width: 100%;               /* Prevent images from exceeding their container */
+  max-height: 250px;            
+  height: auto;                 
+  max-width: 100%;            
   margin-right: 10px;          
-  flex-shrink: 0;                /* Prevent images from shrinking */
+  flex-shrink: 0;                
   border-radius: 8px;            
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }  
@@ -382,37 +383,37 @@ p {
 .circle-container {
   width: 150px; 
   height: 150px; 
-  overflow: hidden; /* Ensures the image stays inside the bounds */
-  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; 
+  border-radius: 50%; 
   margin-bottom: 10px;
 }
 
 .square-container {
   width: 75px; 
   height: 75px; 
-  overflow: hidden; /* Ensures the image stays inside the bounds */
+  overflow: hidden; 
 }
 
 .circle-image {
-    width: 100%; /* Make the image fill the container */
-    height: 100%; /* Stretch image to container size */
-    object-fit: cover; /* Ensures the image aspect ratio fits well */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .link-image {
-  width: 100%; /* Make the image fill the container */
-  height: 100%; /* Stretch image to container size */
-  object-fit: cover; /* Ensures the image aspect ratio fits well */
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
 }
 
 .link-image:hover {
-    opacity: 70%; /* Increases brightness when hovered */
+    opacity: 70%; 
 }
 
 .about-head {
   display: flex;
   align-items: center;
-  gap: 150px; /* Space between the image and heading */
+  gap: 150px; 
 }
 
 .link-container {
@@ -459,48 +460,48 @@ p {
       display: flex;
       justify-content: center;
       background-color: rgba(0, 0, 0, 0.7);
-      padding: 5px 0; /* Smaller padding for a compact navbar */
-      gap: 0.25rem; /* Reduce the gap between links */
+      padding: 5px 0; 
+      gap: 0.25rem; 
       z-index: 1000;
   }
 
   .navbar .nav-link {
-      font-size: 1.3rem; /* Smaller font size for links */
-      padding: 5px 10px; /* Smaller padding inside links */
+      font-size: 1.3rem; 
+      padding: 5px 10px; 
   }
 
   .navbar .highlighted-text {
-      letter-spacing: 0; /* Remove extra letter spacing */
-      font-size: inherit; /* Inherits the reduced font size from .nav-link */
+      letter-spacing: 0; 
+      font-size: inherit;
   }
 
   /* Box Container Layout */
   .box-container {
-      flex-direction: column; /* Stack boxes vertically */
-      align-items: center; /* Center boxes */
-      gap: 20px; /* Add spacing between boxes */
+      flex-direction: column; 
+      align-items: center; 
+      gap: 20px; 
   }
 
   .box {
-      width: 90vw; /* Make the box width responsive */
-      aspect-ratio: 1; /* Maintain square shape */
-      max-width: 400px; /* Optional: cap the max width for larger screens */
-      border-radius: 10px; /* Keep the same rounded corners */
+      width: 90vw; 
+      aspect-ratio: 1; 
+      max-width: 400px; 
+      border-radius: 10px; 
   }
 
   /* About Section */
   .about-head {
-      flex-direction: column; /* Stack heading and image vertically */
-      gap: 20px; /* Add spacing between items */
+      flex-direction: column;
+      gap: 20px; 
       text-align: center;
   }
 
   .about-content {
-      width: 95%; /* Adjust width to fit mobile screens */
+      width: 95%; 
   }
 
   .circle-container, .square-container {
-      width: 100px; /* Reduce circle size */
+      width: 100px; 
       height: 100px;
   }
 
@@ -521,59 +522,60 @@ p {
   .popup-content {
       background-color: #fff;
       border-radius: 10px;
-      width: 90%; /* Responsive width for mobile */
-      max-height: 90%; /* Prevent overflow */
-      overflow: auto; /* Allow scrolling if content is too tall */
-      padding: 15px; /* Adjust padding for smaller screens */
+      width: 90%; 
+      max-height: 90%; 
+      overflow: auto;
+      padding: 15px; 
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      min-height: 60vh; 
   }
 
   .popup-content h2 {
-      font-size: 1.5rem; /* Adjust heading size */
+      font-size: 1.5rem; 
       text-align: center;
       margin-bottom: 1rem;
   }
 
   .popup-content h3 {
-      font-size: 1.2rem; /* Adjust subheading size */
+      font-size: 1.2rem; 
       margin-top: 1.5rem;
   }
 
   .popup-content p {
-      font-size: 1rem; /* Adjust paragraph font size */
-      line-height: 1.5; /* Improve readability */
+      font-size: 1rem; 
+      line-height: 1.5; 
       margin-bottom: 1.5rem;
   }
 
   .spot {
-      flex-direction: row; /* Stack embeds vertically */
-      gap: 1vh;             /* Reduce the gap between embeds */
-      padding: 0;            /* Remove unnecessary padding */
+      flex-direction: row;
+      gap: 1vh;             
+      padding: 0;            
       overflow: auto;
   }
 
   .spot iframe {
-      max-width: 100%;       /* Prevent overflow */
-      height: 100%;          /* Adjust height for better fit */
+      max-width: 100%;       
+      height: 100%;          
   }
 
 
   .image-gallery {
-      overflow-x: auto;          /* Ensure horizontal scrolling */
-      white-space: nowrap;       /* Maintain horizontal scrolling */
+      overflow-x: auto;          
+      white-space: nowrap;       
   }
 
   .image-gallery img {
-      max-width: 85%;            /* Scale images for smaller screens */
-      flex-shrink: 0;            /* Prevent shrinking when scrolling */
-      margin-right: 10px;        /* Maintain spacing between images */
+      max-width: 85%;            
+      flex-shrink: 0;            
+      margin-right: 10px;        
   }
 
   .close {
       position: absolute;
       top: 10px;
       right: 15px;
-      font-size: 1.5rem; /* Adjust close button size */
+      font-size: 1.5rem; 
       cursor: pointer;
       color: #333;
   }
