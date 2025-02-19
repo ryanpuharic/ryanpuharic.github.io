@@ -470,6 +470,10 @@ p {
       padding: 5px 8px; 
   }
 
+  .navbar a {
+    font-size: 1.3rem;
+  }
+
   .navbar .highlighted-text {
       letter-spacing: 0; 
       font-size: inherit;
